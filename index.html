@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Records App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Medical Records App</h1>
+
+  <!-- Create Patient Module -->
+  <section id="create-patient">
+    <h2>Create Patient</h2>
+    <form id="patient-form">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="date" id="dob" placeholder="DOB" required>
+      <input type="text" id="phone" placeholder="Phone" required>
+      <input type="text" id="clientId" placeholder="Client Code" required>
+      <input type="date" id="dos" placeholder="Date of Service" required>
+      <select id="tests" multiple size="6" required></select>
+      <button type="submit">Create Patient</button>
+    </form>
+    <div id="create-patient-result"></div>
+  </section>
+
+  <!-- Search Patients Module -->
+  <section id="search-patient">
+    <h2>Search Patients</h2>
+    <input type="text" id="search-lastName" placeholder="Last Name">
+    <input type="date" id="search-dob" placeholder="DOB">
+    <input type="text" id="search-accession" placeholder="Accession Number">
+    <button id="search-btn">Search</button>
+    <div id="search-results"></div>
+    <div id="pagination-controls">
+      <button id="prev-page">Previous</button>
+      <span id="current-page">1</span>
+      <button id="next-page">Next</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
