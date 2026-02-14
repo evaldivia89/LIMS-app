@@ -1,4 +1,4 @@
-const apiBase = "https://lims-app-x9uu.onrender.com/";
+const apiBase = "https://lims-app-x9uu.onrender.com";
 async function loadTests() {
   const response = await fetch(`${apiBase}/tests`);
   const tests = await response.json();
